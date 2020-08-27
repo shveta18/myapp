@@ -13,12 +13,8 @@ class App extends React.Component {
   state = 
       {
         timestamp: "",
-        emotion_note: "",
         emotion: "",
-        physical_note: "",
-        physical: "",
-        goal_note: "",
-        goal: ""
+        physical: ""
       }
     
     
@@ -30,9 +26,8 @@ class App extends React.Component {
 
         <div>
           {/*push all state data to individual components*/}
-          <Emotion timestamp={this.state.timestamp} emotion_note={this.state.emotion_note} emotion={this.state.emotion}  />
-          <Physical timestamp={this.state.timestamp} physical_note={this.state.physical_note} physical={this.state.physical} />
-          <PersonalGoal timestamp={this.state.timestamp} goal_note={this.state.goal_note} goal={this.state.goal}/>
+          <Emotion timestamp={this.state.timestamp} emotion={this.state.emotion}  />
+          <Physical timestamp={this.state.timestamp} physical={this.state.physical} />
         </div>
 
         <div className="submit">
