@@ -10,25 +10,18 @@ class App extends React.Component {
 
   // add state
 
-  state = {
-    wellbeing: [
+  state = 
       {
-        timestamp: '',
-        emotion_note: '',
-        emotion: ''
-      },
-      {
-        timestamp: '',
-        physical_note: '',
-        physical: ''
-      },
-      {
-        timestamp: '',
-        goal_note: '',
-        goal: ''
+        timestamp: "",
+        emotion_note: "",
+        emotion: "",
+        physical_note: "",
+        physical: "",
+        goal_note: "",
+        goal: ""
       }
-    ]
-  }
+    
+    
   render() {
     console.log(this.state.wellbeing);
     return (
@@ -36,9 +29,9 @@ class App extends React.Component {
         <p>this is placeholder code for practice</p>
 
         <div>
-          <Emotion />
-          <Physical />
-          <PersonalGoal />
+          <Emotion timestamp={this.state.timestamp} emotion_note={this.state.emotion_note} emotion={this.state.emotion}  />
+          <Physical timestamp={this.state.timestamp} physical_note={this.state.physical_note} physical={this.state.physical} />
+          <PersonalGoal timestamp={this.state.timestamp} goal_note={this.state.goal_note} goal={this.state.goal}/>
         </div>
 
         <div className="submit">
