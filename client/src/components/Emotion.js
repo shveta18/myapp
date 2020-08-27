@@ -1,14 +1,14 @@
-import React from 'react';
+//import React from 'react';
 
-class Emotion extends React.Component {
-  render() {
-    return (
-      <div>
-        <p>emotional wellbeing component</p>
+// class Emotion extends React.Component {
+//   render() {
+//     return (
+//       <div>
+//         <p>emotional wellbeing component</p>
         
-      </div>
-    );
-  }
-}
+//       </div>
+//     );
+//   }
+// }
 
-export default Emotion;
+// export default Emotion;
