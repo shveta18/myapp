@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { 
+    Container,
     Button, 
     Form, 
     FormGroup, 
     Label, 
     Input, 
-    FormText } from 'reactstrap';
+     } from 'reactstrap';
         
 
 class Wellbeing extends Component {
     render() {
         return (
+          <Container>
             <Form>
         <FormGroup>
           <Label for="exampleText">Emotional Wellbeing</Label>
@@ -22,6 +24,7 @@ class Wellbeing extends Component {
         </FormGroup>
         <Button>Submit</Button>
       </Form>
+      </Container>
         )
     }
   }
